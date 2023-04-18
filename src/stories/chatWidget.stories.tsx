@@ -1,4 +1,4 @@
-import { ChatWidget } from '@/components/ChatWidget';
+import { ChatWidget } from '@/index';
 import * as ChatController from '@/lib/controls';
 import { Message } from '@/types';
 

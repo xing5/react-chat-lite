@@ -1,10 +1,4 @@
-
-export interface ButtonTheme {
-  size?: 'md' | 'lg'
-  bgColor?: string
-  iconColor?: string
-  customIconSrc?: string
-}
+import { ButtonTheme } from "@/types"
 
 interface Props extends ButtonTheme {
   isChatOpened: boolean

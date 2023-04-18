@@ -1,21 +1,10 @@
 import { useEffect, useState } from 'react';
-import { BubbleButton, ButtonTheme } from './BubbleButton';
-import { Chat, ChatProps } from './Chat';
-import { CommandData } from '@/types';
-import * as ReactDOMClient from 'react-dom/client';
+import { BubbleButton } from './BubbleButton';
+import { Chat } from './Chat';
+import { ChatWidgetProps, CommandData } from '@/types';
+import { createRoot } from 'react-dom/client';
 
-export interface BubbleProps extends ChatProps {
-  theme?: BubbleTheme;
-  onOpen?: () => void;
-  onClose?: () => void;
-}
-
-export interface BubbleTheme {
-  button?: ButtonTheme;
-  bgColor?: string;
-}
-
-const ChatBubble = (props: BubbleProps) => {
+const ChatBubble = (props: ChatWidgetProps) => {
   const [isChatOpened, setChatOpened] = useState(false);
 
   useEffect(() => {
@@ -75,11 +64,11 @@ const ChatBubble = (props: BubbleProps) => {
   );
 };
 
-export const ChatWidget = (props: BubbleProps) => {
+export const ChatWidget = (props: ChatWidgetProps) => {
   useEffect(() => {
     const chatBubbleContainer = document.createElement('div');
     document.body.appendChild(chatBubbleContainer);
-    ReactDOMClient.createRoot(chatBubbleContainer).render(<ChatBubble {...props} />);
+    createRoot(chatBubbleContainer).render(<ChatBubble {...props} />);
     return () => {
       document.body.removeChild(chatBubbleContainer);
     };

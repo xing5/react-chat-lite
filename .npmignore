@@ -1,0 +1,7 @@
+src
+.eslintignore
+.eslintrc.cjs
+rollup.config.js
+tailwind.config.js
+postcss.config.cjs
+tsconfig.json
