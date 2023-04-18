@@ -26,11 +26,8 @@ const indexConfig = {
     }),
     postcss({
       plugins: [autoprefixer(), tailwindcss()],
-      extract: false,
-      modules: false,
-      autoModules: false,
       minimize: true,
-      inject: false,
+      inject: true,
     }),
     typescript(),
     typescriptPaths({ preserveExtensions: true }),

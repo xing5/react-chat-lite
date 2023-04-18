@@ -4,13 +4,19 @@
   "description": "An open source chat component written with TypeScript based on React and Tailwind CSS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "styles": "dist/main.css",
   "type": "module",
   "scripts": {
     "dev": "ladle serve -p 3006",
     "story:build": "ladle build",
     "build": "rollup --config rollup.config.js"
   },
-  "keywords": [],
+  "keywords": ["react", "chat", "component", "tailwindcss", "typescript"],
+  "homepage": "https://github.com/xing5/react-chat-lite",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xing5/react-chat-lite.git"
+  },
   "author": "Xing Wu",
   "license": "ISC",
   "dependencies": {
