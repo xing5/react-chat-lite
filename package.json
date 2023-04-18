@@ -1,6 +1,6 @@
 {
   "name": "react-chat-lite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An open source chat component written with TypeScript based on React and Tailwind CSS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,13 @@
     "story:build": "ladle build",
     "build": "rollup --config rollup.config.js"
   },
-  "keywords": ["react", "chat", "component", "tailwindcss", "typescript"],
+  "keywords": [
+    "react",
+    "chat",
+    "component",
+    "tailwindcss",
+    "typescript"
+  ],
   "homepage": "https://github.com/xing5/react-chat-lite",
   "repository": {
     "type": "git",
